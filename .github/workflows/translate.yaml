@@ -1,6 +1,11 @@
 name: Translate lesson html files
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        description: 'Who triggered this build?'
+        required: true
+        default: 'Maintainer (via GitHub)'
 
 jobs:
   build:

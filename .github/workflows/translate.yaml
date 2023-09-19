@@ -16,3 +16,17 @@ jobs:
         with:
           ref: 'gh-pages'
       
+      - name: Prepare translation directory
+        run: |
+          rm -rf es
+          cp -r $PWD /tmp/es
+          mv /tmp/es .
+        shell: bash
+        
+      - name: DeepL Translate Github Action
+        uses: lyqht/deepl-translate-github-action@v2
+        with:
+          target_languages: es
+          input_file_path: ./01-intro.html
+          output_file_name_pattern: ./{language}/01-intro.html
+          deepl_api_key: ${{ secrets.DEEPL_API_KEY }}

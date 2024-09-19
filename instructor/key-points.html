@@ -281,6 +281,30 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="06-script.html">5. Shell Scripts</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="07-find.html">6. Finding Things</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -435,6 +459,44 @@ anteriores y editarlos y repetirlos.</li>
 introducidos anteriormente.</li>
 <li>Utilice <code>history</code> para mostrar los comandos recientes, y
 <code>![number]</code> para repetir un comando por número.</li>
+</ul></section><section id="06-script"><h2 class="section-heading"><a href="06-script.html">Shell Scripts</a></h2>
+<hr class="half-width">
+<ul>
+<li>Guarda comandos en archivos (normalmente llamados shell scripts)
+para reutilizarlos.</li>
+<li>
+<code>bash [filename]</code> ejecuta los comandos guardados en un
+archivo.</li>
+<li>
+<code>$@</code> se refiere a todos los argumentos de línea de
+comandos de un script de shell.</li>
+<li>
+<code>$1</code>, <code>$2</code>, etc., se refieren al primer
+argumento de la línea de comandos, al segundo argumento de la línea de
+comandos, etc.</li>
+<li>Coloque las variables entre comillas si los valores pueden contener
+espacios.</li>
+<li>Dejar que los usuarios decidan qué archivos procesar es más flexible
+y coherente con los comandos integrados de Unix.</li>
+</ul></section><section id="07-find"><h2 class="section-heading"><a href="07-find.html">Finding Things</a></h2>
+<hr class="half-width">
+<ul>
+<li>
+<code>find</code> encuentra archivos con propiedades específicas que
+coinciden con patrones.</li>
+<li>
+<code>grep</code> selecciona líneas en archivos que coinciden con
+patrones.</li>
+<li>
+<code>--help</code> es una opción soportada por muchos comandos
+bash, y programas que pueden ser ejecutados desde dentro de Bash, para
+mostrar más información sobre cómo usar estos comandos o programas.</li>
+<li>
+<code>man [command]</code> muestra la página del manual de un
+comando determinado.</li>
+<li>
+<code>$([command])</code> inserta la salida de un comando en su
+lugar.</li>
 </ul></section>
 </div>
     </main>

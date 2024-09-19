@@ -62,10 +62,10 @@ episodes:
 - 01-intro.md
 - 02-filedir.md
 - 03-create.md
-- 04-pipefilter.md
 - 05-loop.md
 # - 06-script.md
 # - 07-find.md
+# - 04-pipefilter.md
 
 # Information for Learners
 learners: 

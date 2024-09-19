@@ -60,7 +60,7 @@ contact: 'team@carpentries.org'
 # Order of episodes in your lesson
 episodes: 
 - 01-intro.md
-# - 02-filedir.md
+- 02-filedir.md
 # - 03-create.md
 # - 04-pipefilter.md
 # - 05-loop.md
@@ -84,4 +84,4 @@ profiles:
 
 url: 'https://swcarpentry.github.io/shell-novice'
 analytics: carpentries
-lang: en
+lang: es

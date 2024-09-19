@@ -245,78 +245,6 @@
 </div>
 <!--/div.accordion-flush-->
 
-<div class="accordion accordion-flush" id="accordionFlush3">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading3">
-        <a href="02-filedir.html">2. Navigating Files and Directories</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush4">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading4">
-        <a href="03-create.html">3. Working With Files and Directories</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush5">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading5">
-        <a href="04-pipefilter.html">4. Pipes and Filters</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush6">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading6">
-        <a href="05-loop.html">5. Loops</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush7">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading7">
-        <a href="06-script.html">6. Shell Scripts</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush8">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading8">
-        <a href="07-find.html">7. Finding Things</a>
-    </div>
-<!--/div.accordion-header-->
-
-  </div>
-<!--/div.accordion-item-->
-</div>
-<!--/div.accordion-flush-->
-
                 </div>
               </div>
             </div>
@@ -376,154 +304,17 @@
 <section id="01-intro"><h2 class="section-heading"><a href="01-intro.html">Introducing the Shell</a></h2>
 <hr class="half-width">
 <ul>
-<li>A shell is a program whose primary purpose is to read commands and
-run other programs.</li>
-<li>This lesson uses Bash, the default shell in many implementations of
-Unix.</li>
-<li>Programs can be run in Bash by entering commands at the command-line
-prompt.</li>
-<li>The shell’s main advantages are its high action-to-keystroke ratio,
-its support for automating repetitive tasks, and its capacity to access
-networked machines.</li>
-<li>A significant challenge when using the shell can be knowing what
-commands need to be run and how to run them.</li>
-</ul></section><section id="02-filedir"><h2 class="section-heading"><a href="02-filedir.html">Navigating Files and Directories</a></h2>
-<hr class="half-width">
-<ul>
-<li>The file system is responsible for managing information on the
-disk.</li>
-<li>Information is stored in files, which are stored in directories
-(folders).</li>
-<li>Directories can also store other directories, which then form a
-directory tree.</li>
-<li>
-<code>pwd</code> prints the user’s current working directory.</li>
-<li>
-<code>ls [path]</code> prints a listing of a specific file or
-directory; <code>ls</code> on its own lists the current working
-directory.</li>
-<li>
-<code>cd [path]</code> changes the current working directory.</li>
-<li>Most commands take options that begin with a single
-<code>-</code>.</li>
-<li>Directory names in a path are separated with <code>/</code> on Unix,
-but <code>\</code> on Windows.</li>
-<li>
-<code>/</code> on its own is the root directory of the whole file
-system.</li>
-<li>An absolute path specifies a location from the root of the file
-system.</li>
-<li>A relative path specifies a location starting from the current
-location.</li>
-<li>
-<code>.</code> on its own means ‘the current directory’;
-<code>..</code> means ‘the directory above the current one’.</li>
-</ul></section><section id="03-create"><h2 class="section-heading"><a href="03-create.html">Working With Files and Directories</a></h2>
-<hr class="half-width">
-<ul>
-<li>
-<code>cp [old] [new]</code> copies a file.</li>
-<li>
-<code>mkdir [path]</code> creates a new directory.</li>
-<li>
-<code>mv [old] [new]</code> moves (renames) a file or
-directory.</li>
-<li>
-<code>rm [path]</code> removes (deletes) a file.</li>
-<li>
-<code>*</code> matches zero or more characters in a filename, so
-<code>*.txt</code> matches all files ending in <code>.txt</code>.</li>
-<li>
-<code>?</code> matches any single character in a filename, so
-<code>?.txt</code> matches <code>a.txt</code> but not
-<code>any.txt</code>.</li>
-<li>Use of the Control key may be described in many ways, including
-<code>Ctrl-X</code>, <code>Control-X</code>, and <code>^X</code>.</li>
-<li>The shell does not have a trash bin: once something is deleted, it’s
-really gone.</li>
-<li>Most files’ names are <code>something.extension</code>. The
-extension isn’t required, and doesn’t guarantee anything, but is
-normally used to indicate the type of data in the file.</li>
-<li>Depending on the type of work you do, you may need a more powerful
-text editor than Nano.</li>
-</ul></section><section id="04-pipefilter"><h2 class="section-heading"><a href="04-pipefilter.html">Pipes and Filters</a></h2>
-<hr class="half-width">
-<ul>
-<li>
-<code>wc</code> counts lines, words, and characters in its
-inputs.</li>
-<li>
-<code>cat</code> displays the contents of its inputs.</li>
-<li>
-<code>sort</code> sorts its inputs.</li>
-<li>
-<code>head</code> displays the first 10 lines of its input.</li>
-<li>
-<code>tail</code> displays the last 10 lines of its input.</li>
-<li>
-<code>command &gt; [file]</code> redirects a command’s output to a
-file (overwriting any existing content).</li>
-<li>
-<code>command &gt;&gt; [file]</code> appends a command’s output to a
-file.</li>
-<li>
-<code>[first] | [second]</code> is a pipeline: the output of the
-first command is used as the input to the second.</li>
-<li>The best way to use the shell is to use pipes to combine simple
-single-purpose programs (filters).</li>
-</ul></section><section id="05-loop"><h2 class="section-heading"><a href="05-loop.html">Loops</a></h2>
-<hr class="half-width">
-<ul>
-<li>A <code>for</code> loop repeats commands once for every thing in a
-list.</li>
-<li>Every <code>for</code> loop needs a variable to refer to the thing
-it is currently operating on.</li>
-<li>Use <code>$name</code> to expand a variable (i.e., get its value).
-<code>${name}</code> can also be used.</li>
-<li>Do not use spaces, quotes, or wildcard characters such as ‘*’ or ‘?’
-in filenames, as it complicates variable expansion.</li>
-<li>Give files consistent names that are easy to match with wildcard
-patterns to make it easy to select them for looping.</li>
-<li>Use the up-arrow key to scroll up through previous commands to edit
-and repeat them.</li>
-<li>Use <kbd>Ctrl</kbd>+<kbd>R</kbd> to search through the previously
-entered commands.</li>
-<li>Use <code>history</code> to display recent commands, and
-<code>![number]</code> to repeat a command by number.</li>
-</ul></section><section id="06-script"><h2 class="section-heading"><a href="06-script.html">Shell Scripts</a></h2>
-<hr class="half-width">
-<ul>
-<li>Save commands in files (usually called shell scripts) for
-re-use.</li>
-<li>
-<code>bash [filename]</code> runs the commands saved in a file.</li>
-<li>
-<code>$@</code> refers to all of a shell script’s command-line
-arguments.</li>
-<li>
-<code>$1</code>, <code>$2</code>, etc., refer to the first
-command-line argument, the second command-line argument, etc.</li>
-<li>Place variables in quotes if the values might have spaces in
-them.</li>
-<li>Letting users decide what files to process is more flexible and more
-consistent with built-in Unix commands.</li>
-</ul></section><section id="07-find"><h2 class="section-heading"><a href="07-find.html">Finding Things</a></h2>
-<hr class="half-width">
-<ul>
-<li>
-<code>find</code> finds files with specific properties that match
-patterns.</li>
-<li>
-<code>grep</code> selects lines in files that match patterns.</li>
-<li>
-<code>--help</code> is an option supported by many bash commands,
-and programs that can be run from within Bash, to display more
-information on how to use these commands or programs.</li>
-<li>
-<code>man [command]</code> displays the manual page for a given
-command.</li>
-<li>
-<code>$([command])</code> inserts a command’s output in place.</li>
+<li>Un shell es un programa cuyo objetivo principal es leer órdenes y
+ejecutar otros programas.</li>
+<li>Esta lección utiliza Bash, el shell por defecto en muchas
+implementaciones de Unix.</li>
+<li>Los programas pueden ejecutarse en Bash introduciendo comandos en la
+línea de comandos.</li>
+<li>Las principales ventajas del shell son su elevada relación entre
+acciones y pulsaciones, su soporte para automatizar tareas repetitivas y
+su capacidad para acceder a máquinas conectadas en red.</li>
+<li>Un reto importante al utilizar el shell puede ser saber qué comandos
+hay que ejecutar y cómo ejecutarlos.</li>
 </ul></section>
 </div>
     </main>

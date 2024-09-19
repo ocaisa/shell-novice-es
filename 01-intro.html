@@ -206,63 +206,9 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#nelles-pipeline-a-typical-problem">Nelle’s Pipeline: A Typical Problem</a></li>
+        <ul><li><a href="#la-tuber%C3%ADa-de-nelle-un-problema-t%C3%ADpico">La tubería de Nelle: Un problema típico</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush3">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading3">
-        <a href="02-filedir.html">2. Navigating Files and Directories</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush4">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading4">
-        <a href="03-create.html">3. Working With Files and Directories</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush5">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading5">
-        <a href="04-pipefilter.html">4. Pipes and Filters</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush6">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading6">
-        <a href="05-loop.html">5. Loops</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush7">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading7">
-        <a href="06-script.html">6. Shell Scripts</a>
-    </div><!--/div.accordion-header-->
-
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush8">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading8">
-        <a href="07-find.html">7. Finding Things</a>
-    </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -310,7 +256,7 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="02-filedir.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -318,8 +264,8 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Home
         </a>
-        <a class="chapter-link float-end" href="02-filedir.html" rel="next">
-          Next: Navigating Files and...
+        <a class="chapter-link float-end" href="index.html" rel="next">
+          Home
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -344,7 +290,7 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>What is a command shell and why would I use one?</li>
+<ul><li>¿Qué es un intérprete de comandos y por qué debería utilizarlo?</li>
 </ul></div>
 </div>
 </div>
@@ -352,103 +298,113 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Explain how the shell relates to the keyboard, the screen, the
-operating system, and users’ programs.</li>
-<li>Explain when and why command-line interfaces should be used instead
-of graphical interfaces.</li>
+<ul><li>Explique cómo se relaciona el shell con el teclado, la pantalla, el
+sistema operativo y los programas de los usuarios.</li>
+<li>Explique cuándo y por qué deben utilizarse interfaces de línea de
+comandos en lugar de interfaces gráficas.</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
 <div class="section level3">
-<h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a></h3>
-<p>Humans and computers commonly interact in many different ways, such
-as through a keyboard and mouse, touch screen interfaces, or using
-speech recognition systems. The most widely used way to interact with
-personal computers is called a <strong>graphical user interface</strong>
-(GUI). With a GUI, we give instructions by clicking a mouse and using
-menu-driven interactions.</p>
-<p>While the visual aid of a GUI makes it intuitive to learn, this way
-of delivering instructions to a computer scales very poorly. Imagine the
-following task: for a literature search, you have to copy the third line
-of one thousand text files in one thousand different directories and
-paste it into a single file. Using a GUI, you would not only be clicking
-at your desk for several hours, but you could potentially also commit an
-error in the process of completing this repetitive task. This is where
-we take advantage of the Unix shell. The Unix shell is both a
-<strong>command-line interface</strong> (CLI) and a scripting language,
-allowing such repetitive tasks to be done automatically and fast. With
-the proper commands, the shell can repeat tasks with or without some
-modification as many times as we want. Using the shell, the task in the
-literature example can be accomplished in seconds.</p>
+<h3 id="fondo">Fondo<a class="anchor" aria-label="anchor" href="#fondo"></a></h3>
+<p>Los seres humanos y los ordenadores interactúan habitualmente de
+muchas formas diferentes, como por ejemplo a través de un teclado y un
+ratón, interfaces de pantalla táctil o utilizando sistemas de
+reconocimiento de voz. La forma más utilizada de interactuar con los
+ordenadores personales se denomina <strong>interfaz gráfica de
+usuario</strong> (GUI). Con una GUI, damos instrucciones haciendo clic
+con el ratón y utilizando interacciones basadas en menús.</p>
+<p>Aunque la ayuda visual de una GUI hace que el aprendizaje sea
+intuitivo, esta forma de dar instrucciones a un ordenador es muy poco
+escalable. Imagine la siguiente tarea: para una búsqueda bibliográfica,
+tiene que copiar la tercera línea de mil archivos de texto en mil
+directorios diferentes y pegarla en un único archivo. Con una interfaz
+gráfica de usuario, no sólo pasaría varias horas haciendo clic en su
+escritorio, sino que también podría cometer un error en el proceso de
+realización de esta tarea repetitiva. Aquí es donde aprovechamos las
+ventajas del shell de Unix. El shell de Unix es a la vez una interfaz de
+línea de comandos (CLI) y un lenguaje de scripting, que permite realizar
+estas tareas repetitivas de forma automática y rápida. Con los comandos
+adecuados, el shell puede repetir tareas con o sin alguna modificación
+tantas veces como queramos. Utilizando el shell, la tarea del ejemplo de
+la bibliografía puede realizarse en cuestión de segundos.</p>
 </div>
 <div class="section level3">
-<h3 id="the-shell">The Shell<a class="anchor" aria-label="anchor" href="#the-shell"></a></h3>
-<p>The shell is a program where users can type commands. With the shell,
-it’s possible to invoke complicated programs like climate modeling
-software or simple commands that create an empty directory with only one
-line of code. The most popular Unix shell is Bash (the Bourne Again
-SHell — so-called because it’s derived from a shell written by Stephen
-Bourne). Bash is the default shell on most modern implementations of
-Unix and in most packages that provide Unix-like tools for Windows. Note
-that ‘Git Bash’ is a piece of software that enables Windows users to use
-a Bash like interface when interacting with Git.</p>
-<p>Using the shell will take some effort and some time to learn. While a
-GUI presents you with choices to select, CLI choices are not
-automatically presented to you, so you must learn a few commands like
-new vocabulary in a language you’re studying. However, unlike a spoken
-language, a small number of “words” (i.e. commands) gets you a long way,
-and we’ll cover those essential few today.</p>
-<p>The grammar of a shell allows you to combine existing tools into
-powerful pipelines and handle large volumes of data automatically.
-Sequences of commands can be written into a <em>script</em>, improving
-the reproducibility of workflows.</p>
-<p>In addition, the command line is often the easiest way to interact
-with remote machines and supercomputers. Familiarity with the shell is
-near essential to run a variety of specialized tools and resources
-including high-performance computing systems. As clusters and cloud
-computing systems become more popular for scientific data crunching,
-being able to interact with the shell is becoming a necessary skill. We
-can build on the command-line skills covered here to tackle a wide range
-of scientific questions and computational challenges.</p>
-<p>Let’s get started.</p>
-<p>When the shell is first opened, you are presented with a
-<strong>prompt</strong>, indicating that the shell is waiting for
-input.</p>
+<h3 id="el-caparazón">El caparazón<a class="anchor" aria-label="anchor" href="#el-caparaz%C3%B3n"></a></h3>
+<p>El shell es un programa en el que los usuarios pueden escribir
+comandos. Con el shell, es posible invocar programas complicados como el
+software de modelado climático o comandos sencillos que crean un
+directorio vacío con una sola línea de código. El intérprete de comandos
+Unix más popular es Bash (Bourne Again SHell, así llamado porque deriva
+de un intérprete de comandos escrito por Stephen Bourne). Bash es el
+shell por defecto en la mayoría de las implementaciones modernas de Unix
+y en la mayoría de los paquetes que proporcionan herramientas tipo Unix
+para Windows. Ten en cuenta que ‘Git Bash’ es una pieza de software que
+permite a los usuarios de Windows utilizar una interfaz similar a Bash
+cuando interactúan con Git.</p>
+<p>Usar el shell te llevará algo de esfuerzo y algo de tiempo
+aprenderlo. Mientras que una GUI te presenta opciones para seleccionar,
+las opciones de la CLI no se te presentan automáticamente, por lo que
+debes aprender algunos comandos como nuevo vocabulario en un idioma que
+estás estudiando. Sin embargo, a diferencia de un idioma hablado, un
+pequeño número de “palabras” (es decir, comandos) te lleva un largo
+camino, y vamos a cubrir esos pocos esenciales hoy.</p>
+<p>La gramática de un shell permite combinar herramientas existentes en
+potentes pipelines y manejar grandes volúmenes de datos de forma
+automática. Las secuencias de comandos pueden escribirse en un
+<em>script</em>, lo que mejora la reproducibilidad de los flujos de
+trabajo.</p>
+<p>Además, la línea de comandos suele ser la forma más sencilla de
+interactuar con máquinas remotas y superordenadores. La familiaridad con
+el shell es casi esencial para ejecutar una variedad de herramientas y
+recursos especializados, incluidos los sistemas informáticos de alto
+rendimiento. A medida que los clústeres y los sistemas de computación en
+nube se hacen más populares para el procesamiento de datos científicos,
+ser capaz de interactuar con el intérprete de comandos se está
+convirtiendo en una habilidad necesaria. Los conocimientos sobre la
+línea de comandos que aquí se exponen nos permitirán abordar una amplia
+gama de cuestiones científicas y retos computacionales.</p>
+<p>Empecemos.</p>
+<p>Cuando el intérprete de comandos se abre por primera vez, aparece un
+<strong>prompt</strong>, que indica que el intérprete de comandos está
+esperando la entrada de datos.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span></span></code></pre>
 </div>
-<p>The shell typically uses <code>$</code> as the prompt, but may use a
-different symbol. In the examples for this lesson, we’ll show the prompt
-as <code>$</code>. Most importantly, <em>do not type the prompt</em>
-when typing commands. Only type the command that follows the prompt.
-This rule applies both in these lessons and in lessons from other
-sources. Also note that after you type a command, you have to press the
-<kbd>Enter</kbd> key to execute it.</p>
-<p>The prompt is followed by a <strong>text cursor</strong>, a character
-that indicates the position where your typing will appear. The cursor is
-usually a flashing or solid block, but it can also be an underscore or a
-pipe. You may have seen it in a text editor program, for example.</p>
-<p>Note that your prompt might look a little different. In particular,
-most popular shell environments by default put your user name and the
-host name before the <code>$</code>. Such a prompt might look like,
-e.g.:</p>
+<p>El shell normalmente utiliza <code>$</code> como prompt, pero puede
+utilizar un símbolo diferente. En los ejemplos de esta lección,
+mostraremos el prompt como <code>$</code>. Lo más importante, <em>no
+escribas el prompt</em> cuando escribas comandos. Sólo escriba el
+comando que sigue al prompt. Esta regla se aplica tanto en estas
+lecciones como en lecciones de otras fuentes. Ten en cuenta también que
+después de escribir un comando, tienes que pulsar la tecla
+<kbd>Enter</kbd> para ejecutarlo.</p>
+<p>El prompt va seguido de un <strong>cursor de texto</strong>, un
+carácter que indica la posición en la que aparecerá lo que escribas. El
+cursor suele ser un bloque parpadeante o sólido, pero también puede ser
+un guión bajo o un tubo. Es posible que lo hayas visto en un programa
+editor de texto, por ejemplo.</p>
+<p>Ten en cuenta que tu prompt puede ser un poco diferente. En
+particular, los entornos de shell más populares ponen por defecto su
+nombre de usuario y el nombre del host antes de <code>$</code>. Un
+prompt de este tipo podría tener, por ejemplo, el aspecto siguiente</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">nelle@localhost</span> $</span></code></pre>
 </div>
-<p>The prompt might even include more than this. Do not worry if your
-prompt is not just a short <code>$</code>. This lesson does not depend
-on this additional information and it should also not get in your way.
-The only important item to focus on is the <code>$</code> character
-itself and we will see later why.</p>
-<p>So let’s try our first command, <code>ls</code>, which is short for
-listing. This command will list the contents of the current
-directory:</p>
+<p>El mensaje puede incluir más que esto. No se preocupe si su pregunta
+no es sólo una <code>$</code> corta. Esta lección no depende de esta
+información adicional y tampoco debería ser un obstáculo. Lo único
+importante es centrarse en el carácter <code>$</code> y más adelante
+veremos por qué.</p>
+<p>Así que vamos a probar nuestro primer comando, <code>ls</code>, que
+es la abreviatura de listado. Este comando listará el contenido del
+directorio actual:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -460,15 +416,16 @@ directory:</p>
 <pre class="output" tabindex="0"><code>Desktop     Downloads   Movies      Pictures
 Documents   Library     Music       Public</code></pre>
 </div>
-<div id="command-not-found" class="callout">
+<div id="comando-no-encontrado" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="command-not-found" class="callout-inner">
-<h3 class="callout-title">Command not found</h3>
+<div id="comando-no-encontrado" class="callout-inner">
+<h3 class="callout-title">Comando no encontrado</h3>
 <div class="callout-content">
-<p>If the shell can’t find a program whose name is the command you
-typed, it will print an error message such as:</p>
+<p>Si el intérprete de comandos no puede encontrar un programa cuyo
+nombre coincida con el comando que has escrito, imprimirá un mensaje de
+error del tipo</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -479,43 +436,47 @@ typed, it will print an error message such as:</p>
 </h3>
 <pre class="output" tabindex="0"><code>ks: command not found</code></pre>
 </div>
-<p>This might happen if the command was mis-typed or if the program
-corresponding to that command is not installed.</p>
+<p>Esto puede ocurrir si el comando se ha escrito mal o si el programa
+correspondiente a ese comando no está instalado.</p>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="nelles-pipeline-a-typical-problem">Nelle’s Pipeline: A Typical Problem<a class="anchor" aria-label="anchor" href="#nelles-pipeline-a-typical-problem"></a></h2>
-<hr class="half-width"><p>Nelle Nemo, a marine biologist, has just returned from a six-month
-survey of the <a href="https://en.wikipedia.org/wiki/North_Pacific_Gyre" class="external-link">North Pacific
-Gyre</a>, where she has been sampling gelatinous marine life in the <a href="https://en.wikipedia.org/wiki/Great_Pacific_Garbage_Patch" class="external-link">Great
-Pacific Garbage Patch</a>. She has 1520 samples that she’s run through
-an assay machine to measure the relative abundance of 300 proteins. She
-needs to run these 1520 files through an imaginary program called
-<code>goostats.sh</code>. In addition to this huge task, she has to
-write up results by the end of the month, so her paper can appear in a
-special issue of <em>Aquatic Goo Letters</em>.</p>
-<p>If Nelle chooses to run <code>goostats.sh</code> by hand using a GUI,
-she’ll have to select and open a file 1520 times. If
-<code>goostats.sh</code> takes 30 seconds to run each file, the whole
-process will take more than 12 hours of Nelle’s attention. With the
-shell, Nelle can instead assign her computer this mundane task while she
-focuses her attention on writing her paper.</p>
-<p>The next few lessons will explore the ways Nelle can achieve this.
-More specifically, the lessons explain how she can use a command shell
-to run the <code>goostats.sh</code> program, using loops to automate the
-repetitive steps of entering file names, so that her computer can work
-while she writes her paper.</p>
-<p>As a bonus, once she has put a processing pipeline together, she will
-be able to use it again whenever she collects more data.</p>
-<p>In order to achieve her task, Nelle needs to know how to:</p>
-<ul><li>navigate to a file/directory</li>
-<li>create a file/directory</li>
-<li>check the length of a file</li>
-<li>chain commands together</li>
-<li>retrieve a set of files</li>
-<li>iterate over files</li>
-<li>run a shell script containing her pipeline</li>
+<section><h2 class="section-heading" id="la-tubería-de-nelle-un-problema-típico">La tubería de Nelle: Un problema típico<a class="anchor" aria-label="anchor" href="#la-tuber%C3%ADa-de-nelle-un-problema-t%C3%ADpico"></a></h2>
+<hr class="half-width"><p>Nelle Nemo, bióloga marina, acaba de regresar de un estudio de seis
+meses en el <a href="https://en.wikipedia.org/wiki/North_Pacific_Gyre" class="external-link">Giro del
+Pacífico Norte</a>, donde ha estado tomando muestras de vida marina
+gelatinosa en el <a href="https://en.wikipedia.org/wiki/Great_Pacific_Garbage_Patch" class="external-link">Gran
+Parche de Basura del Pacífico</a>. Tiene 1520 muestras que ha pasado por
+una máquina de ensayo para medir la abundancia relativa de 300
+proteínas. Tiene que pasar estos 1520 archivos por un programa
+imaginario llamado <code>goostats.sh</code>. Además de esta enorme
+tarea, tiene que escribir los resultados antes de fin de mes, para que
+su artículo pueda aparecer en un número especial de <em>Aquatic Goo
+Letters</em>.</p>
+<p>Si Nelle decide ejecutar <code>goostats.sh</code> a mano utilizando
+una interfaz gráfica de usuario, tendrá que seleccionar y abrir un
+archivo 1520 veces. Si <code>goostats.sh</code> tarda 30 segundos en
+ejecutar cada archivo, todo el proceso requerirá más de 12 horas de la
+atención de Nelle. Con el intérprete de comandos, Nelle puede asignar a
+su ordenador esta tarea mundana mientras se concentra en escribir su
+trabajo.</p>
+<p>Las siguientes lecciones explorarán las formas en que Nelle puede
+conseguirlo. Más concretamente, las lecciones explican cómo puede
+utilizar un intérprete de comandos para ejecutar el programa
+<code>goostats.sh</code>, utilizando bucles para automatizar los pasos
+repetitivos de introducción de nombres de archivo, de modo que su
+ordenador pueda trabajar mientras ella escribe su trabajo.</p>
+<p>Además, una vez que haya creado una cadena de procesamiento, podrá
+volver a utilizarla cada vez que recopile más datos.</p>
+<p>Para llevar a cabo su tarea, Nelle necesita saber cómo:</p>
+<ul><li>navegar a un archivo/directorio</li>
+<li>crear un archivo/directorio</li>
+<li>comprobar la longitud de un fichero</li>
+<li>encadenar comandos</li>
+<li>recuperar un conjunto de archivos</li>
+<li>iterar sobre ficheros</li>
+<li>ejecuta un script shell que contiene su pipeline</li>
 </ul><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -523,24 +484,24 @@ be able to use it again whenever she collects more data.</p>
 <div class="callout-inner">
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
-<ul><li>A shell is a program whose primary purpose is to read commands and
-run other programs.</li>
-<li>This lesson uses Bash, the default shell in many implementations of
-Unix.</li>
-<li>Programs can be run in Bash by entering commands at the command-line
-prompt.</li>
-<li>The shell’s main advantages are its high action-to-keystroke ratio,
-its support for automating repetitive tasks, and its capacity to access
-networked machines.</li>
-<li>A significant challenge when using the shell can be knowing what
-commands need to be run and how to run them.</li>
+<ul><li>Un shell es un programa cuyo objetivo principal es leer órdenes y
+ejecutar otros programas.</li>
+<li>Esta lección utiliza Bash, el shell por defecto en muchas
+implementaciones de Unix.</li>
+<li>Los programas pueden ejecutarse en Bash introduciendo comandos en la
+línea de comandos.</li>
+<li>Las principales ventajas del shell son su elevada relación entre
+acciones y pulsaciones, su soporte para automatizar tareas repetitivas y
+su capacidad para acceder a máquinas conectadas en red.</li>
+<li>Un reto importante al utilizar el shell puede ser saber qué comandos
+hay que ejecutar y cómo ejecutarlos.</li>
 </ul></div>
 </div>
 </div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="02-filedir.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -548,8 +509,8 @@ commands need to be run and how to run them.</li>
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Home
         </a>
-        <a class="chapter-link float-end" href="02-filedir.html" rel="next">
-          Next: Navigating Files and...
+        <a class="chapter-link float-end" href="index.html" rel="next">
+          Home
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>

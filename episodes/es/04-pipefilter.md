@@ -144,8 +144,8 @@ $ ls lengths.txt
 lengths.txt
 ```
 
-Ahora podemos enviar el contenido de `lengths.txt` a la pantalla utilizando `cat
-lengths.txt`. El comando `cat` recibe su nombre de 'concatenar', es decir, unir, e
+Ahora podemos enviar el contenido de `lengths.txt` a la pantalla utilizando
+`cat lengths.txt`. El comando `cat` recibe su nombre de 'concatenar', es decir, unir, e
 imprime el contenido de los ficheros uno tras otro. En este caso sólo hay un fichero,
 así que `cat` sólo nos muestra lo que contiene:
 
@@ -263,8 +263,8 @@ $ head -n 1 sorted-lengths.txt
   9  methane.pdb
 ```
 
-Usando `-n 1` con `head` le decimos que sólo queremos la primera línea del fichero; `-n
-20` obtendría las 20 primeras, y así sucesivamente. Como `sorted-lengths.txt` contiene
+Usando `-n 1` con `head` le decimos que sólo queremos la primera línea del fichero;
+`-n 20` obtendría las 20 primeras, y así sucesivamente. Como `sorted-lengths.txt` contiene
 las longitudes de nuestros ficheros ordenadas de menor a mayor, la salida de `head` debe
 ser el fichero con menos líneas.
 

@@ -6,16 +6,17 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Redirect a command's output to a file.
-- Construct command pipelines with two or more stages.
-- Explain what usually happens if a program or pipeline isn't given any input to process.
 - Explain the advantage of linking commands with pipes and filters.
+- Combine sequences of commands to get new output
+- Redirect a command's output to a file.
+- Explain what usually happens if a program or pipeline isn't given any input to process.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- How can I combine existing commands to do new things?
+- How can I combine existing commands to produce a desired output?
+- How can I show only part of the output? 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -550,7 +551,7 @@ $ cut -d , -f 2 animals.csv
 
 The `cut` command is used to remove or 'cut out' certain sections of each line in the file,
 and `cut` expects the lines to be separated into columns by a <kbd>Tab</kbd> character.
-A character used in this way is a called a **delimiter**.
+A character used in this way is called a **delimiter**.
 In the example above we use the `-d` option to specify the comma as our delimiter character.
 We have also used the `-f` option to specify that we want to extract the second field (column).
 This gives the following output:

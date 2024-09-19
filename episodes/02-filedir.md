@@ -91,7 +91,7 @@ which will be constructed in a similar way, but not be exactly identical.
 
 On Nelle's computer, the filesystem looks like this:
 
-![](fig/filesystem.svg){alt='The file system is made up of a root directory that contains sub-directoriestitled bin, data, users, and tmp'}
+![](fig/filesystem.svg){alt='The file system is made up of a root directory that contains sub-directories titled bin, data, users, and tmp'}
 
 The filesystem looks like an upside down tree. 
 The topmost directory  is the **root directory**
@@ -128,7 +128,7 @@ Underneath `/Users`,
 we find one directory for each user with an account on Nelle's machine,
 her colleagues *imhotep* and *larry*.
 
-![](fig/home-directories.svg){alt='Like other directories, home directories are sub-directories underneath"/Users" like "/Users/imhotep", "/Users/larry" or"/Users/nelle"'}
+![](fig/home-directories.svg){alt='Like other directories, home directories are sub-directories underneath "/Users" like "/Users/imhotep", "/Users/larry" or"/Users/nelle"'}
 
 The user *imhotep*'s files are stored in `/Users/imhotep`,
 user *larry*'s in `/Users/larry`,
@@ -263,6 +263,18 @@ Mandatory arguments to long options are mandatory for short options, too.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
+### When to use short or long options
+When options exist as both short and long options:
+
+- Use the short option when typing commands directly into the
+   shell to minimize keystrokes and get your task done faster.
+- Use the long option in scripts to provide clarity.
+  It will be read many times and typed once.
+  
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
 ## Unsupported command-line options
 
 If you try to use an option that is not supported, `ls` and other commands
@@ -292,14 +304,14 @@ of the `ls` command and its options.
 
 To navigate through the `man` pages,
 you may use <kbd>↑</kbd> and <kbd>↓</kbd> to move line-by-line,
-or try <kbd>B</kbd> and <kbd>Spacebar</kbd> to skip up and down by a full page.
+or try <kbd>b</kbd> and <kbd>Spacebar</kbd> to skip up and down by a full page.
 To search for a character or word in the `man` pages,
 use <kbd>/</kbd> followed by the character or word you are searching for.
 Sometimes a search will result in multiple hits.
 If so, you can move between hits using <kbd>N</kbd> (for moving forward) and
 <kbd>Shift</kbd>\+<kbd>N</kbd> (for moving backward).
 
-To **quit** the `man` pages, press <kbd>Q</kbd>.
+To **quit** the `man` pages, press <kbd>q</kbd>.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -710,7 +722,7 @@ what will `ls -F ../backup` display?
 3. `2012-12-01/ 2013-01-08/ 2013-01-27/`
 4. `original/ pnas_final/ pnas_sub/`
 
-![](fig/filesystem-challenge.svg){alt='A directory tree below the Users directory where "/Users" contains thedirectories "backup" and "thing"; "/Users/backup" contains "original","pnas\_final" and "pnas\_sub"; "/Users/thing" contains "backup"; and"/Users/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"'}
+![](fig/filesystem-challenge.svg){alt='A directory tree below the Users directory where "/Users" contains the directories "backup" and "thing"; "/Users/backup" contains "original","pnas\_final" and "pnas\_sub"; "/Users/thing" contains "backup"; and"/Users/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"'}
 
 :::::::::::::::  solution
 
@@ -741,7 +753,7 @@ what command(s) will result in the following output:
 pnas_sub/ pnas_final/ original/
 ```
 
-![](fig/filesystem-challenge.svg){alt='A directory tree below the Users directory where "/Users" contains thedirectories "backup" and "thing"; "/Users/backup" contains "original","pnas\_final" and "pnas\_sub"; "/Users/thing" contains "backup"; and"/Users/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"'}
+![](fig/filesystem-challenge.svg){alt='A directory tree below the Users directory where "/Users" contains the directories "backup" and "thing"; "/Users/backup" contains "original","pnas\_final" and "pnas\_sub"; "/Users/thing" contains "backup"; and"/Users/thing/backup" contains "2012-12-01", "2013-01-08" and"2013-01-27"'}
 
 1. `ls pwd`
 2. `ls -r -F`
@@ -832,18 +844,6 @@ Applications/         System/
 Library/              Users/
 Network/              Volumes/
 ```
-
-
-:::::::::::::::::::::::::::::::::::::::::  callout
-### When to use short or long options
-When options exist as both short and long options:
-
-- Use the short option when typing commands directly into the
-   shell to minimize keystrokes and get your task done faster.
-- Use the long option in scripts to provide clarity.
-  It will be read many times and typed once.
-  
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Nelle's Pipeline: Organizing Files
 

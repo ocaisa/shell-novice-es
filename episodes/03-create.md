@@ -147,7 +147,8 @@ There are special characters that can cause your command to not work as
 expected and can even result in data loss.
 
 If you need to refer to names of files or directories that have spaces
-or other special characters, you should surround the name in quotes (`""`).
+or other special characters, you should surround the name in single
+[quotes](https://www.gnu.org/software/bash/manual/html_node/Quoting.html) (`''`).
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -322,7 +323,7 @@ Naming a PNG image of a whale as `whale.mp3` doesn't somehow
 magically turn it into a recording of whale song, though it *might*
 cause the operating system to associate the file with a music player
 program. In this case, if someone double-clicked `whale.mp3` in a file
-explorer program,the music player will automatically (and erroneously)
+explorer program, the music player will automatically (and erroneously)
 attempt to open the `whale.mp3` file.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

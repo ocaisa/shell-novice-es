@@ -108,11 +108,11 @@
   The Unix Shell
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 81%" class="percentage">
-    81%
+<aside class="col-md-12 lesson-progress"><div style="width: 83%" class="percentage">
+    83%
   </div>
   <div class="progress software">
-    <div class="progress-bar software" role="progressbar" style="width: 81%" aria-valuenow="81" aria-label="Progreso de la lección" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar software" role="progressbar" style="width: 83%" aria-valuenow="83" aria-label="Progreso de la lección" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -223,7 +223,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="05-loop.html">4. Loops</a>
+        <a href="04-pipefilter.html">4. Pipes and Filters</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -232,7 +232,16 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="06-script.html">5. Shell Scripts</a>
+        <a href="05-loop.html">5. Loops</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="06-script.html">6. Shell Scripts</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -243,7 +252,7 @@
     <div class="accordion-header" id="flush-headingcurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        6. Finding Things
+        7. Finding Things
         </span>
       
     </div><!--/div.accordion-header-->
@@ -606,7 +615,7 @@ Miscellaneous:
   Solución
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>La respuesta correcta es 3, porque la opción <code>-w</code> sólo
 busca coincidencias con palabras completas. Las otras opciones también
@@ -707,7 +716,7 @@ más de un campo en una línea.</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <pre class="source"><code>grep -w $1 -r $2 | cut -d : -f 2 | cut -d , -f 1,3 &gt; $1.txt</code></pre>
 <p>En realidad, puedes intercambiar el orden de los dos comandos de
@@ -755,7 +764,7 @@ resultado correcto, elegancia, legibilidad y velocidad.</p>
   Soluciones
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <pre class="source"><code>for sis in Jo Meg Beth Amy
 do
@@ -1031,7 +1040,7 @@ pensado tu respuesta, puedes probar los comandos en el directorio
   Solución
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>La opción 1 es correcta. Poner la expresión de coincidencia entre
 comillas evita que el shell la expanda, por lo que se pasa al comando
@@ -1112,7 +1121,7 @@ shell:</p>
   Solución
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Buscar todos los archivos con extensión <code>.dat</code>
 recursivamente desde el directorio actual</li>

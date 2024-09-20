@@ -272,7 +272,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="05-loop.html">4. Loops</a>
+        <a href="04-pipefilter.html">4. Pipes and Filters</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -284,7 +284,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="06-script.html">5. Shell Scripts</a>
+        <a href="05-loop.html">5. Loops</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -296,7 +296,19 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="07-find.html">6. Finding Things</a>
+        <a href="06-script.html">6. Shell Scripts</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="07-find.html">7. Finding Things</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -438,6 +450,32 @@ garantiza nada, pero normalmente se utiliza para indicar el tipo de
 datos del archivo.</li>
 <li>Dependiendo del tipo de trabajo que realices, puede que necesites un
 editor de texto más potente que Nano.</li>
+</ul></section><section id="04-pipefilter"><h2 class="section-heading"><a href="04-pipefilter.html">Pipes and Filters</a></h2>
+<hr class="half-width">
+<ul>
+<li>
+<code>wc</code> cuenta líneas, palabras y caracteres en sus
+entradas.</li>
+<li>
+<code>cat</code> muestra el contenido de sus entradas.</li>
+<li>
+<code>sort</code> ordena sus entradas.</li>
+<li>
+<code>head</code> muestra las 10 primeras líneas de su entrada.</li>
+<li>
+<code>tail</code> muestra las 10 últimas líneas de su entrada.</li>
+<li>
+<code>command &gt; [file]</code> redirige la salida de un comando a
+un archivo (sobrescribiendo cualquier contenido existente).</li>
+<li>
+<code>command &gt;&gt; [file]</code> añade la salida de un comando a
+un archivo.</li>
+<li>
+<code>[first] | [second]</code> es una canalización: la salida del
+primer comando se utiliza como entrada del segundo.</li>
+<li>La mejor forma de utilizar el intérprete de comandos es usar
+tuberías para combinar programas sencillos de un solo propósito
+(filtros).</li>
 </ul></section><section id="05-loop"><h2 class="section-heading"><a href="05-loop.html">Loops</a></h2>
 <hr class="half-width">
 <ul>

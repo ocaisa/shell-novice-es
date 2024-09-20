@@ -437,7 +437,7 @@ comandos:
 salida al archivo "longitudes". "wc -l \*.pdb | sort -n | head -n 1" creará un canal en
 el que la salida del comando "wc" es la entrada del comando "sort", la salida del
 comando "sort" es la entrada del comando "head" y la salida del comando "head" se dirige
-al intérprete de órdenes.}
+al intérprete de órdenes.'}
 
 ::::::::::::::::::::::::::::::::::::::: challenge
 

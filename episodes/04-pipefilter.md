@@ -112,7 +112,7 @@ allí, y el comando no parece hacer nada.
 
 Si cometes este tipo de error, puedes salir de este estado manteniendo pulsada la tecla
 control (<kbd>Ctrl</kbd>) y pulsando la letra <kbd>C</kbd> una vez:
-<kbd>Ctrl</kbd>\+<kbd>C</kbd>. A continuación, suelta ambas teclas.
+<kbd>Ctrl</kbd>+<kbd>C</kbd>. A continuación, suelta ambas teclas.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
